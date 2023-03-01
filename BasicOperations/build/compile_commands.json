@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mirage/Projects/CppRoadMap/BasicOperations/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/main.dir/main.cpp.o -c /home/mirage/Projects/CppRoadMap/BasicOperations/main.cpp",
+  "file": "/home/mirage/Projects/CppRoadMap/BasicOperations/main.cpp"
+}
+]
