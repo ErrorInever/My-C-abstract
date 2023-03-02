@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mirage/Projects/CppRoadMap/BasicOperations/Logic_operations/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/logic_operations.dir/main.cpp.o -c /home/mirage/Projects/CppRoadMap/BasicOperations/Logic_operations/main.cpp",
+  "file": "/home/mirage/Projects/CppRoadMap/BasicOperations/Logic_operations/main.cpp"
+}
+]
