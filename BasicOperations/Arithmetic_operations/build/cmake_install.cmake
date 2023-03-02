@@ -1,4 +1,4 @@
-# Install script for directory: /home/mirage/Projects/CppRoadMap/BasicOperations
+# Install script for directory: /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mirage/Projects/CppRoadMap/BasicOperations/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

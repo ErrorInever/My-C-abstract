@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/mirage/Projects/CppRoadMap/BasicOperations
-BuildDirectory: /home/mirage/Projects/CppRoadMap/BasicOperations/build
+SourceDirectory: /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations
+BuildDirectory: /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/mirage/Projects/CppRoadMap/BasicOperations"
+ConfigureCommand: "/usr/bin/cmake" "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

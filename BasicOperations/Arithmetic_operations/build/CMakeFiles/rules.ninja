@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/mirage/Projects/CppRoadMap/BasicOperations -B/home/mirage/Projects/CppRoadMap/BasicOperations/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations -B/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build
   description = Re-running CMake...
   generator = 1
 

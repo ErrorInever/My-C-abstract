@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/mirage/Projects/CppRoadMap/BasicOperations/build/
+cmake_ninja_workdir = /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build/
 
 #############################################
 # Utility command for Experimental
@@ -217,11 +217,13 @@ build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 
 build cmake_object_order_depends_target_arithmetic_operations: phony || CMakeFiles/arithmetic_operations.dir
 
-build CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o: CXX_COMPILER__arithmetic_operations_Debug /home/mirage/Projects/CppRoadMap/BasicOperations/arithmetic_operations.cpp || cmake_object_order_depends_target_arithmetic_operations
+build CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o: CXX_COMPILER__arithmetic_operations_Debug /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/arithmetic_operations.cpp || cmake_object_order_depends_target_arithmetic_operations
   DEP_FILE = CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/arithmetic_operations.dir
   OBJECT_FILE_DIR = CMakeFiles/arithmetic_operations.dir
+  TARGET_COMPILE_PDB = CMakeFiles/arithmetic_operations.dir/
+  TARGET_PDB = arithmetic_operations.pdb
 
 
 # =============================================================================
@@ -237,15 +239,16 @@ build arithmetic_operations: CXX_EXECUTABLE_LINKER__arithmetic_operations_Debug 
   OBJECT_DIR = CMakeFiles/arithmetic_operations.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/arithmetic_operations.dir/
   TARGET_FILE = arithmetic_operations
-  TARGET_PDB = arithmetic_operations.dbg
+  TARGET_PDB = arithmetic_operations.pdb
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -257,7 +260,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/mirage/Projects/CppRoadMap/BasicOperations/build/CPackSourceConfig.cmake
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -269,7 +272,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -281,7 +284,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ccmake -S/home/mirage/Projects/CppRoadMap/BasicOperations -B/home/mirage/Projects/CppRoadMap/BasicOperations/build
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ccmake -S/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations -B/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -293,7 +296,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/cmake --regenerate-during-build -S/home/mirage/Projects/CppRoadMap/BasicOperations -B/home/mirage/Projects/CppRoadMap/BasicOperations/build
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/cmake --regenerate-during-build -S/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations -B/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -305,7 +308,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Custom command for CMakeFiles/Experimental
 
 build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D Experimental
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D Experimental
   pool = console
 
 
@@ -313,7 +316,7 @@ build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: C
 # Custom command for CMakeFiles/Nightly
 
 build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D Nightly
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D Nightly
   pool = console
 
 
@@ -321,7 +324,7 @@ build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMM
 # Custom command for CMakeFiles/Continuous
 
 build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D Continuous
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D Continuous
   pool = console
 
 
@@ -329,7 +332,7 @@ build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTO
 # Custom command for CMakeFiles/NightlyMemoryCheck
 
 build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyMemoryCheck
   pool = console
 
 
@@ -337,7 +340,7 @@ build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMe
 # Custom command for CMakeFiles/NightlyStart
 
 build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyStart
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyStart
   pool = console
 
 
@@ -345,7 +348,7 @@ build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: C
 # Custom command for CMakeFiles/NightlyUpdate
 
 build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyUpdate
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyUpdate
   pool = console
 
 
@@ -353,7 +356,7 @@ build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate:
 # Custom command for CMakeFiles/NightlyConfigure
 
 build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyConfigure
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyConfigure
   pool = console
 
 
@@ -361,7 +364,7 @@ build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConf
 # Custom command for CMakeFiles/NightlyBuild
 
 build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyBuild
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyBuild
   pool = console
 
 
@@ -369,7 +372,7 @@ build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: C
 # Custom command for CMakeFiles/NightlyTest
 
 build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyTest
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyTest
   pool = console
 
 
@@ -377,7 +380,7 @@ build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUS
 # Custom command for CMakeFiles/NightlyCoverage
 
 build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyCoverage
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyCoverage
   pool = console
 
 
@@ -385,7 +388,7 @@ build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCover
 # Custom command for CMakeFiles/NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlyMemCheck
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlyMemCheck
   pool = console
 
 
@@ -393,7 +396,7 @@ build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCh
 # Custom command for CMakeFiles/NightlySubmit
 
 build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D NightlySubmit
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D NightlySubmit
   pool = console
 
 
@@ -401,7 +404,7 @@ build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit:
 # Custom command for CMakeFiles/ExperimentalStart
 
 build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalStart
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalStart
   pool = console
 
 
@@ -409,7 +412,7 @@ build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalUpdate
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalUpdate
   pool = console
 
 
@@ -417,7 +420,7 @@ build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ExperimentalConfigure
 
 build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalConfigure
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalConfigure
   pool = console
 
 
@@ -425,7 +428,7 @@ build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/Experi
 # Custom command for CMakeFiles/ExperimentalBuild
 
 build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalBuild
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalBuild
   pool = console
 
 
@@ -433,7 +436,7 @@ build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/Experiment
 # Custom command for CMakeFiles/ExperimentalTest
 
 build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalTest
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalTest
   pool = console
 
 
@@ -441,7 +444,7 @@ build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/Experimenta
 # Custom command for CMakeFiles/ExperimentalCoverage
 
 build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalCoverage
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalCoverage
   pool = console
 
 
@@ -449,7 +452,7 @@ build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/ExperimentalMemCheck
 
 build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalMemCheck
   pool = console
 
 
@@ -457,7 +460,7 @@ build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/Experim
 # Custom command for CMakeFiles/ExperimentalSubmit
 
 build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ExperimentalSubmit
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ExperimentalSubmit
   pool = console
 
 
@@ -465,7 +468,7 @@ build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/Experimen
 # Custom command for CMakeFiles/ContinuousStart
 
 build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousStart
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousStart
   pool = console
 
 
@@ -473,7 +476,7 @@ build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousSt
 # Custom command for CMakeFiles/ContinuousUpdate
 
 build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousUpdate
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -481,7 +484,7 @@ build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousU
 # Custom command for CMakeFiles/ContinuousConfigure
 
 build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousConfigure
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousConfigure
   pool = console
 
 
@@ -489,7 +492,7 @@ build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/Continuo
 # Custom command for CMakeFiles/ContinuousBuild
 
 build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousBuild
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousBuild
   pool = console
 
 
@@ -497,7 +500,7 @@ build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBu
 # Custom command for CMakeFiles/ContinuousTest
 
 build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousTest
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousTest
   pool = console
 
 
@@ -505,7 +508,7 @@ build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTes
 # Custom command for CMakeFiles/ContinuousCoverage
 
 build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousCoverage
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousCoverage
   pool = console
 
 
@@ -513,7 +516,7 @@ build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/ContinuousMemCheck
 
 build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousMemCheck
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousMemCheck
   pool = console
 
 
@@ -521,7 +524,7 @@ build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/Continuou
 # Custom command for CMakeFiles/ContinuousSubmit
 
 build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/build && /usr/bin/ctest -D ContinuousSubmit
+  COMMAND = cd /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build && /usr/bin/ctest -D ContinuousSubmit
   pool = console
 
 # =============================================================================
@@ -533,7 +536,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # =============================================================================
 
 #############################################
-# Folder: /home/mirage/Projects/CppRoadMap/BasicOperations/build
+# Folder: /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build
 
 build all: phony arithmetic_operations
 
@@ -549,14 +552,14 @@ build all: phony arithmetic_operations
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/mirage/Projects/CppRoadMap/BasicOperations/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/mirage/Projects/CppRoadMap/BasicOperations/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
