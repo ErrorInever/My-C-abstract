@@ -1,5 +1,3 @@
 # ninja log v5
-50	3903	1677742819681276055	CMakeFiles/main.dir/main.cpp.o	2f83465aa7c75fd7
-3903	4758	1677742820534609423	main	345d1a6405163802
-2	1031	1677743018984617607	CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o	6e64cdd4b68cc510
-1032	1456	1677743019407950958	arithmetic_operations	b5300b74a78e87a8
+2	785	1677743719987979451	CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o	899b486631a052a8
+787	996	1677743720197979460	arithmetic_operations	b5300b74a78e87a8

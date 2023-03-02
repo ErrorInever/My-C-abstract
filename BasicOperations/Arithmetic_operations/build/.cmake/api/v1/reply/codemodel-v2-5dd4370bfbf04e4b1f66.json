@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/mirage/Projects/CppRoadMap/BasicOperations/build",
-		"source" : "/home/mirage/Projects/CppRoadMap/BasicOperations"
+		"build" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build",
+		"source" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations"
 	},
 	"version" : 
 	{

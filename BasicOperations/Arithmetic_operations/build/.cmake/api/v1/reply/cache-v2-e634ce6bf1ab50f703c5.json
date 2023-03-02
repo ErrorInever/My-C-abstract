@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/build"
+			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -171,10 +171,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -299,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations"
+			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1735,7 +1735,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/build"
+			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build"
 		},
 		{
 			"name" : "main_IS_TOP_LEVEL",
@@ -1759,7 +1759,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations"
+			"value" : "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations"
 		}
 	],
 	"kind" : "cache",
