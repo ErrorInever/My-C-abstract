@@ -1,1 +1,1 @@
-README TEXT
+It's my own C++ abstract for study.
