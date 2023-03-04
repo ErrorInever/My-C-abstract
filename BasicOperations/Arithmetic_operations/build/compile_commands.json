@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/arithmetic_operations.dir/arithmetic_operations.cpp.o -c /home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/arithmetic_operations.cpp",
-  "file": "/home/mirage/Projects/CppRoadMap/BasicOperations/Arithmetic_operations/arithmetic_operations.cpp"
-}
-]

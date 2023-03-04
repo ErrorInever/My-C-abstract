@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/mirage/Projects/CppRoadMap/BasicOperations/Loops/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/loops.dir/main.cpp.o -c /home/mirage/Projects/CppRoadMap/BasicOperations/Loops/main.cpp",
-  "file": "/home/mirage/Projects/CppRoadMap/BasicOperations/Loops/main.cpp"
-}
-]

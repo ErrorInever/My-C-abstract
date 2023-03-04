@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/mirage/Projects/CppRoadMap/GeneralConcepts/DataTypesAndVariables/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/general_concepts.dir/main.cpp.o -c /home/mirage/Projects/CppRoadMap/GeneralConcepts/DataTypesAndVariables/main.cpp",
-  "file": "/home/mirage/Projects/CppRoadMap/GeneralConcepts/DataTypesAndVariables/main.cpp"
-}
-]
