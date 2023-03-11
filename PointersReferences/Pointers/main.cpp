@@ -1,4 +1,9 @@
+#include <cstddef>
 #include <iostream>
+
+void expample_null_pointer_type(std::nullptr_t){
+    std::cout << "This is function with nullptr type";
+}
 
 int main(int, char**) {
     int x{4};
@@ -38,6 +43,10 @@ int main(int, char**) {
 
     *nptr = 6;
     std::cout << "Number = " << number << std::endl;
+    
+    // Initialization null pointer
+    int* nuPtr {nullptr};
+    expample_null_pointer_type(nullptr);
 
     std::cout << "\n";
     return 0;
