@@ -2,7 +2,7 @@
 #include <iostream>
 
 void expample_null_pointer_type(std::nullptr_t){
-    std::cout << "This is function with nullptr type";
+    std::cout << "This is function with args nullptr type";
 }
 
 int main(int, char**) {
